@@ -1,0 +1,21 @@
+h1{
+  padding:20px;
+  margin:0;
+  display:block;
+  width:100px;
+
+}
+body{
+  margin:0;
+  border-bottom: 1px;
+  background-image:url(cary-bates-stft2ZhAZnw-unsplash.jpg);
+  background-size:cover;
+}
+ul{
+  display: block;
+
+}
+.Links{
+  color:black;
+  text-decoration:none;
+}
