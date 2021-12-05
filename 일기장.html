@@ -1,57 +1,76 @@
 <html>
-    <head>
-        <title>일기장</title>
-        <style>
-            body{
-                border: 2px solid black;
-                margin: 0;
-            }
-            #header{
-                display:inline-block;
-            }
-            #logo{
-                display:inline-block;
-            }
-            #title{
-                border-bottom: 2px solid black;
-                margin: 0;
-                height: 60px;
-                width: 300px;
-                display: block;
-
-            }
-            #menu{
-                text-align:left;
-                margin: 0;
-                border-right: 2px solid black;
-                display: block;
-                padding: 0;
-                width: 90px;
-            }
-            #menu ol{
-                padding: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo">
-                <h2>일기장로고</h2>
-            </div>
-            <div>
-                <a href="">뭔가 허전해서 넣어봄</a>
-            </div>
-        </div>
-        <div id="container">
-
-        </div>
-        <div id="footer">
-
-        </div>
-        <ul id="menu">
-            <ol>홈</ol>
-            <ol>글쓰기</ol>
-            <ol>관리</ol>
-        </ul>
-    </body>
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom: solid gray 1px;
+            padding-left: 20px;
+            height: 50px;
+        }
+        footer{
+            border-top: solid gray 1px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+        }
+        .content main{
+            flex-grow: 1;
+        }
+        .content nav{
+            border-right: solid grey 1px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .content aside{
+            border-left: solid grey 1px;
+        }
+        nav, aside{
+            flex-basis: 100px;
+            flex-shrink: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        footer{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>일기장</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>홈</li>
+                    <li>글쓰기</li>
+                    <li>관리</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sapiente! Quisquam ea architecto doloremque pariatur autem culpa minima tempore cupiditate rerum cum ullam alias, praesentium tempora incidunt labore? Reiciendis libero similique numquam fuga praesentium corrupti culpa quasi necessitatibus nostrum eaque, a, recusandae maxime incidunt delectus rem eveniet? Quae nulla culpa eius ratione ea, qui odit atque repellendus veniam explicabo, quo unde ipsa ad dolorum pariatur inventore officia laboriosam beatae aperiam provident reprehenderit accusantium. Quaerat aspernatur illo est iure commodi, optio ut ad molestiae laboriosam officia odit provident expedita, fugiat placeat? Temporibus sed ipsa dolorum cumque illo tempora neque rem totam consequatur repellendus suscipit incidunt quo, placeat aperiam dolorem eligendi ad voluptatem commodi, id modi. Repudiandae nisi, accusantium cupiditate eum ratione fuga dignissimos perspiciatis alias veniam laborum possimus rem vel aperiam voluptatem doloremque dolor harum praesentium fugiat? Officia officiis dolores, reiciendis, repellendus natus voluptates totam sed numquam nihil fuga quam facere soluta modi ea autem facilis pariatur, inventore illum? Ea rerum molestias repellendus eligendi qui et consectetur obcaecati a quidem iusto harum debitis cum accusamus necessitatibus, facilis quae, iure culpa quasi? Tempora ex nulla enim, odit dolorum quidem quibusdam veritatis tempore harum quas quo soluta ratione nisi rerum voluptatem explicabo consequatur officiis omnis cumque adipisci nihil et sunt laudantium rem. Voluptas repellat porro ex totam, dolorem eaque officiis officia corrupti ipsa illo, necessitatibus quo ducimus vel maiores culpa repellendus dolore! Provident amet numquam eligendi ullam commodi magnam, vitae qui ut accusamus sapiente. Impedit qui aliquam eveniet nesciunt doloribus! Rem eligendi, quidem excepturi quibusdam optio illo! Explicabo perspiciatis incidunt odio aperiam rem veritatis esse? Ad, molestiae mollitia laudantium debitis perspiciatis soluta. Eligendi, facere consequatur! Dolorum cupiditate a omnis, at earum odit distinctio exercitationem, corporis repudiandae sint ipsam accusantium eos rerum ea esse. Veniam velit repudiandae unde minima. Illum, atque corrupti? In magnam ducimus perferendis, officiis, nam quas consequatur maxime odio eligendi accusantium ratione, velit tempora ipsum! Pariatur quam vero deserunt fuga, soluta iusto dolor itaque tempora quia libero, eligendi animi. Eum rem labore minima doloremque, quidem, earum voluptate debitis quaerat corporis suscipit eius iure culpa nam mollitia sed provident ad ea molestias sapiente, quo porro quam vel dolorum perferendis! Deserunt nemo vitae eius suscipit impedit beatae architecto nostrum, veniam asperiores blanditiis facere illum atque doloremque laborum tempora assumenda culpa pariatur adipisci dolorum quae quo maiores eligendi. Sapiente laborum dolorem aliquid ratione mollitia officia minima! Perspiciatis, veniam laudantium quibusdam aliquam laborum fugit voluptas beatae qui nesciunt quo illo voluptates repellat aut reiciendis. Deserunt cumque alias inventore omnis hic saepe non dicta veniam eum architecto officiis odio commodi vitae harum fuga vel excepturi ex, obcaecati sed et ullam expedita! Quae quisquam distinctio natus aut adipisci, architecto minima voluptatum, asperiores at vitae delectus? Illo, dolor voluptatum repellendus culpa nobis similique nemo omnis vitae saepe itaque doloribus, vel dolore veritatis mollitia deserunt odio, dignissimos incidunt cumque hic voluptate iusto ad tempora? Voluptate ullam neque, exercitationem molestias, repudiandae libero distinctio eligendi rem velit officia repellendus. Non ea vero earum recusandae similique nam, qui expedita illo placeat impedit, et perferendis deleniti cum aliquam officiis modi reprehenderit reiciendis iste aperiam? Atque quis unde dicta quaerat. Fugit ad necessitatibus aut molestiae minus optio neque, quibusdam numquam a delectus accusantium inventore animi! Quos dolor consequuntur tempora corporis possimus. Vel enim maiores est mollitia laudantium voluptas, doloremque sit quia architecto voluptates! Nesciunt ad rerum cum sint illum doloremque accusantium esse, eum repellat culpa debitis molestiae cupiditate, laudantium consequuntur quidem repudiandae praesentium a omnis commodi! Sit recusandae harum soluta nobis, quam, laborum quae reiciendis obcaecati consequatur neque ratione eum dolor ullam ducimus. Commodi explicabo, eius laboriosam ratione molestiae magnam id quas qui repellat, fuga eos? Animi deleniti minima dolorem cum in libero voluptatibus distinctio ullam unde quas? Corrupti placeat rem dolorem, voluptas provident molestias aliquid rerum deleniti obcaecati odio ullam quo excepturi, modi consectetur reiciendis neque maxime, non aspernatur autem assumenda id. Recusandae debitis temporibus exercitationem. Aspernatur veniam modi similique? Commodi alias accusamus voluptate doloribus assumenda sunt dolores fuga sapiente aut qui asperiores quidem velit rem repudiandae natus, possimus cumque neque, atque error eveniet quam quis nihil. At porro, consequuntur libero officia amet nisi tempore nesciunt sapiente dolorum, iusto adipisci quia exercitationem. Reiciendis tempora nisi, quaerat repellat ratione, amet ipsa placeat eius repellendus, obcaecati excepturi expedita nam rem. Mollitia excepturi alias, obcaecati deserunt atque accusantium nihil minus. Deserunt est, expedita iusto at incidunt aliquam minus, in vitae optio qui cum illo enim ad voluptate maxime praesentium debitis, officia quo laudantium voluptatibus molestiae. Ex doloremque fuga adipisci dolore, autem praesentium at deleniti obcaecati dolor? Tenetur sit alias, ducimus modi, corrupti ratione atque est quas nemo nam voluptatum, laboriosam illo excepturi quisquam voluptas quis tempora eum dolorum optio vero! Officiis adipisci excepturi, ad doloremque quibusdam voluptates nihil, dolorum deleniti cupiditate maiores optio nam dolores sed magnam blanditiis iusto labore hic possimus neque quidem saepe maxime officia? Quaerat rerum assumenda inventore, et minima vel! Nesciunt iusto aliquid quidem iure voluptatibus qui amet ipsum officia, itaque at sed accusantium vel dolorum nobis corrupti quae illum esse. Totam, quo magni. Expedita, consequuntur assumenda corporis similique aliquam vel quam eum. Voluptatum, explicabo sunt! Maiores quod illum quis? Temporibus voluptate repellendus perspiciatis eum tenetur at quidem eligendi expedita harum velit rerum dicta commodi totam, magni illo soluta corporis aut tempore. Quasi quis tempora similique placeat nam voluptas alias doloremque eos iste? Qui numquam nobis, corrupti saepe ullam cum pariatur assumenda facere molestias alias quae eveniet quia officiis a aspernatur, eius expedita natus magnam necessitatibus? Libero id in rerum tenetur vitae sint! Aspernatur atque accusamus, vel reprehenderit ea velit. Sint, molestias illo. Nam veniam atque non blanditiis deleniti laborum repellendus corrupti accusamus. Illum ea dolores aspernatur eius commodi qui vero hic consequuntur mollitia dolore error, placeat corrupti architecto ratione ducimus quam inventore tempore. Incidunt beatae ut molestiae! Vero deleniti error dicta aperiam hic molestias optio ratione blanditiis sint consequuntur molestiae iure rem expedita provident, omnis corporis, repudiandae illo quo perspiciatis dolor quia soluta? Provident soluta aspernatur eius totam commodi et vitae ratione quod explicabo, iusto rem, ea qui dolores. Iure, repellat.
+            </main>
+            <aside>
+                기능구상중
+            </aside>
+        </section>
+        <footer>
+            만든 사람 도토리, 만든 사람을 만든 사람 생활코딩
+        </footer>
+    </div>
+</body>
 </html>
