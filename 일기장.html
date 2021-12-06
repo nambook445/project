@@ -1,51 +1,52 @@
 <html>
-<head>
-    <style>
+    <head>
+        <style>
         *{
-            margin: 0;
-            padding: 0;
-        }
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        } 
         body{
-            
+            background-color: blueviolet;
+            padding: 0;
+            margin: 0;
         }
         .container{
+            background-color: brown;
+            position: sticky;
             display: flex;
-            flex-direction: column;
+            flex-direction: column;           
         }
         header{
-            border-bottom: solid gray 1px;
-            padding-left: 20px;
-            height: 50px;
-        }
-        footer{
-            border-top: solid gray 1px;
-            text-align: center;
-        }
+            background-color: cadetblue;  
+        }  
         .content{
+            background-color: cornflowerblue;
             display: flex;
-            flex-direction: row;
         }
-        .content main{
-            flex-grow: 1;
-        }
-        .content nav{
-            border-right: solid grey 1px;
-            padding-left: 20px;
-            padding-top: 20px;
-        }
-        .content aside{
-            border-left: solid grey 1px;
-        }
-        nav, aside{
-            flex-basis: 100px;
+        nav{
+            background-color: darkblue;
             flex-shrink: 0;
         }
-        ul{
-            list-style: none;
+        main{
+            background-color: darkolivegreen;
+            flex-grow: 1;
+            text-align: center;
+        }
+        textarea{
+            background-color: darkviolet;
+            resize: vertical;
+            width: 70%;
+            font-size: 20px;
+            
+        }
+        aside{
+            background-color: fuchsia;
         }
         footer{
-            padding: 20px;
+            background-color: grey;
         }
+    
     </style>
 </head>
 <body>
