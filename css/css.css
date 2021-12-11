@@ -1,56 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-}
-body{
-    
-}
-.container{
-    display: flex;
-    flex-direction: column;
-}
-header{
-    border-bottom: solid gray 1px;
-    padding-left: 20px;
-    height: 100px;
-}
-footer{
-    border-top: solid gray 1px;
-    text-align: center;
-    flex-grow: 1;
-}
-.content{
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 0;
-}
-.content main{
-    flex-grow: 1;
-}
-.content nav{
-    border-right: solid grey 1px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-.content aside{
-    border-left: solid grey 1px;
-}
-nav, aside{
-    height: 100%;
-    flex-basis: 100px;
-    flex-shrink: 0;
-}
-ul{
-    list-style: none;
-}
-footer{
-    padding: 20px;
-}
-textarea{
-    background-color: burlywood;
-    color: brown;
-    padding: 20px;
-    width: 100%;
-    font:30px;
-    font-weight: bold;
-}
+    box-sizing: border-box;
+    } 
+    body{
+        background-color: blueviolet;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        background-color: brown;
+        position: sticky;
+        display: flex;
+        flex-direction: column;           
+    }
+    header{
+        background-color: cadetblue;  
+    }  
+    .content{
+        background-color: cornflowerblue;
+        display: flex;
+    }
+    nav{
+        background-color: darkblue;
+        flex-shrink: 0;
+    }
+    main{
+        background-color: darkolivegreen;
+        flex-grow: 1;
+        text-align: center;
+    }
+    textarea{
+        background-color: darkviolet;
+        resize: vertical;
+        width: 100%;
+        
+    }
+    aside{
+        background-color: fuchsia;
+    }
+    footer{
+        background-color: grey;
+    }
