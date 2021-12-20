@@ -115,17 +115,13 @@ var app = http.createServer(function(request,response){
                 var title = queryData.id;
                 var list = templateList(filelist);
                 var template = templateHTML(title, list,
-                  `
-                  <form action="/update_process" method="post">
+                `
+                <form action="/update_process" method="post">
                     <input type="hidden" name="id" value="${title}">
                     <p><input type="text" name="title" placeholder="title" value="${title}"></p>
-                    <p>
-                      <textarea name="description" placeholder="description">${description}</textarea>
-                    </p>
-                    <p>
-                      <input type="submit">
-                    </p>
-                  </form>
+                    <textarea id="summernote" name="description">${description}</textarea>
+                    <input type="submit">
+                </form>
                   `,
                   `<a href="/create">create</a> <a href="/update?id=${title}">update</a>`
                 );
@@ -145,7 +141,7 @@ var app = http.createServer(function(request,response){
                 var description = post.description;
                 fs.rename(`data/${id}`, `data/${title}`, function(error){
                   fs.writeFile(`data/${title}`, description, 'utf8', function(err){
-                    response.writeHead(302, {Location: `/?id=${title}`});
+                    response.writeHead(302, {Location: encodeURI(`/?id=${title}`)});
                     response.end();
                   })
                 });
