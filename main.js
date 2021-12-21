@@ -2,7 +2,11 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 var qs = require('querystring');
- 
+
+
+homeHtml =``
+
+
 function templateHTML(title, list, body, control){
   return `
   <!DOCTYPE html>
@@ -26,6 +30,7 @@ function templateHTML(title, list, body, control){
         });
       });
     </script>
+    
         <title>${title}</title>
    
 </head>
