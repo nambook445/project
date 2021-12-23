@@ -92,6 +92,7 @@ var app = http.createServer(function(request,response){
         var template = templateHTML(title, list, `
             <form action="/create_process" method="post">
                 <input type="text" name="title">
+                <
                 <textarea id="summernote" name="description"></textarea>
                 <input type="submit">
             </form> 
